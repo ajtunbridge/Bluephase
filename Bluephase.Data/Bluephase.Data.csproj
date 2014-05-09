@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDCE28F7-73EE-4837-98EA-3B7A5E171601}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bluephase.Data</RootNamespace>
+    <AssemblyName>Bluephase.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Bluephase\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\Bluephase\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BluephaseUnitOfWork.cs" />
+    <Compile Include="Model\Address.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BluephaseDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BluephaseDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BluephaseDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BluephaseDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BluephaseDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Addresses_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Addresses_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ContactDetails_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ContactDetails_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_CustomerAddresses_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_CustomerAddresses_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_CustomerContacts_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_CustomerContacts_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Customers_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Customers_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Documents_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Documents_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_DocumentTypes_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_DocumentTypes_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_DocumentVersions_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_DocumentVersions_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_MaterialForms_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_MaterialForms_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_MaterialSuppliers_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_MaterialSuppliers_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Materials_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Materials_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_NonConformancies_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_NonConformancies_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartDocuments_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartDocuments_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Parts_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Parts_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartVersionDocuments_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartVersionDocuments_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartVersionMaterials_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartVersionMaterials_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartVersions_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PartVersions_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_People_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_People_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PersonAddresses_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PersonAddresses_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PersonContactDetails_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PersonContactDetails_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionCentres_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionCentres_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionCentreTypes_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionCentreTypes_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOperationDocuments_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOperationDocuments_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOperationMaterials_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOperationMaterials_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOperations_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOperations_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOrderOperations_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOrderOperations_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOrders_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_ProductionOrders_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PurchaseOrderItems_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PurchaseOrderItems_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PurchaseOrders_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_PurchaseOrders_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SalesOrderItemBatches_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SalesOrderItemBatches_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SalesOrderItems_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SalesOrderItems_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SalesOrders_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SalesOrders_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SupplierAddresses_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SupplierAddresses_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SupplierContacts_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_SupplierContacts_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Suppliers_SelectAll_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bluephase_Suppliers_Select_Result.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ContactDetail.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Customer.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CustomerAddress.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CustomerContact.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Document.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentType.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentVersion.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EntityPartialDefs.cs" />
+    <Compile Include="Model\Material.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MaterialForm.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MaterialSupplier.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NonConformancy.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Part.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PartDocument.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PartVersion.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PartVersionDocument.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PartVersionMaterial.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Person.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PersonAddress.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PersonContactDetail.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionCentre.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionCentreType.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionOperation.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionOperationDocument.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionOperationMaterial.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionOrder.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductionOrderOperation.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PurchaseOrder.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PurchaseOrderItem.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SalesOrder.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SalesOrderItem.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SalesOrderItemBatch.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Supplier.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SupplierAddress.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SupplierContact.cs">
+      <DependentUpon>BluephaseDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CustomerContactRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Model\BluephaseDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BluephaseDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Model\BluephaseDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BluephaseDataModel.edmx</DependentUpon>
+      <LastGenOutput>BluephaseDataModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\BluephaseDataModel.edmx.diagram">
+      <DependentUpon>BluephaseDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="Model\BluephaseDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BluephaseDataModel.edmx</DependentUpon>
+      <LastGenOutput>BluephaseDataModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
