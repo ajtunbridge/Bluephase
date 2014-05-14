@@ -48,23 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NinjectModules\BluephaseModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Session.cs" />
-    <Compile Include="StandardDialogService.cs" />
-    <Compile Include="Views\Customers\CustomerManagementView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Customers\CustomerManagementView.Designer.cs">
-      <DependentUpon>CustomerManagementView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ViewBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\ViewBase.Designer.cs">
-      <DependentUpon>ViewBase.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,9 +59,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Customers\CustomerManagementView.resx">
-      <DependentUpon>CustomerManagementView.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
