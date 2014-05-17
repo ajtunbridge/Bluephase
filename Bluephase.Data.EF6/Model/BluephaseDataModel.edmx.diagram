@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="708e55869d734633b60e2ecaf14156f3" Name="Diagram1" ZoomLevel="33">
+        <EntityTypeShape EntityType="BluephaseModel.Address" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ContactDetail" Width="1.5" PointX="0.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.CustomerAddress" Width="1.5" PointX="12.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.CustomerContact" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Customer" Width="1.5" PointX="1.5" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.DocumentAudit" Width="1.5" PointX="19.5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Document" Width="1.5" PointX="15" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.DocumentType" Width="1.5" PointX="12.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.DocumentVersion" Width="1.5" PointX="17.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.EmployeeGroup" Width="1.5" PointX="15" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Employee" Width="1.5" PointX="17.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.MaterialForm" Width="1.5" PointX="3.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Material" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.MaterialSupplier" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.NonConformancy" Width="1.5" PointX="6" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PartDocument" Width="1.5" PointX="17.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Part" Width="1.5" PointX="3.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PartVersionDocument" Width="1.5" PointX="17.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PartVersionMaterial" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PartVersion" Width="1.5" PointX="6" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Person" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PersonAddress" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PersonContactDetail" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionCentre" Width="1.5" PointX="10.5" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionCentreType" Width="1.5" PointX="8.25" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionOperationDocument" Width="1.5" PointX="17.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionOperationMaterial" Width="1.5" PointX="13.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionOperation" Width="1.5" PointX="10.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionOrderOperation" Width="1.5" PointX="12.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.ProductionOrder" Width="1.5" PointX="10.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PurchaseOrderItem" Width="1.5" PointX="8.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.PurchaseOrder" Width="1.5" PointX="6" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.SalesOrderItemBatch" Width="1.5" PointX="10.5" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.SalesOrderItem" Width="1.5" PointX="8.25" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.SalesOrder" Width="1.5" PointX="6" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.SupplierAddress" Width="1.5" PointX="11" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.SupplierContact" Width="1.5" PointX="3" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BluephaseModel.Supplier" Width="1.5" PointX="3.75" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="BluephaseModel.FK_CustomerAddresses_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PersonAddresses_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SupplierAddresses_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PersonContactDetails_ContactDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_CustomerAddresses_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_CustomerContacts_Contacts" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_CustomerContacts_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_Parts_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SalesOrders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_DocumentAudits_DocumentVersions" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_DocumentAudits_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_Documents_DocumentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_DocumentVersions_Documents" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartDocuments_Documents" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersionDocuments_Documents" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOperationDocuments_Documents" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_EmployeeGroups_EmployeeGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_Employees_EmployeeGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_MaterialForms_MaterialForms" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_Materials_MaterialForms" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_MaterialSuppliers_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersionMaterials_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOperationMaterials_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PurchaseOrderItems_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_MaterialSuppliers_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_NonConformancies_PartVersions" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_NonConformancies_People_ClosedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_NonConformancies_People_RaisedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_NonConformancies_SalesOrderItems" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartDocuments_Parts" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_Parts_Parts" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersions_Parts" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersionDocuments_PartVersions" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersionMaterials_PartVersions" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersionOperations_PartVersions" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SalesOrderItems_PartVersions" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PersonAddresses_People" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PersonContactDetails_People" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PurchaseOrders_People" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SalesOrders_People" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SupplierContacts_People" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PartVersionOperations_ProductionCentres" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionCentres_ProductionCentreTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOrderOperationId_ProductionCentres" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOperationDocuments_ProductionOperations" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOperationMaterials_ProductionOperations" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOrderOperationId_ProductionOperations" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOrderOperationId_ProductionOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_ProductionOrders_SalesOrderItems" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PurchaseOrderItems_ProductionOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PurchaseOrderItems_PurchaseOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_PurchaseOrders_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SalesOrderItemBatches_SalesOrderItems" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SalesOrderItems_SalesOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SupplierAddresses_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BluephaseModel.FK_SupplierContacts_Suppliers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
